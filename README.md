@@ -52,12 +52,15 @@ Also create your Kafka topic, using the correct Hostname/IP address of your mach
 
 ## Import the NiFi flow
 Import the example NiFi flow (demo.xml) into your instance of NiFi:
+
 ![alt text](https://github.com/willie-engelbrecht/IngestNiFiToPhoenix/blob/master/UploadTemplate.JPG "Load the template - step 1")
 
 Load select the file on your computer and upload:
+
 ![alt text](https://github.com/willie-engelbrecht/IngestNiFiToPhoenix/blob/master/UploadTemplate2.JPG "Upload the template - step 2")
 
 Click on the Template button to load the example to your NiFi instance:
+
 ![alt text](https://github.com/willie-engelbrecht/IngestNiFiToPhoenix/blob/master/ClickTemplateButton.JPG "Load the sample flow")
 
 Once Imported, update the three Kafka processors, and set the correct Hostname/IP of your Kafka broker:
