@@ -64,6 +64,10 @@ Click on the Template button to load the example to your NiFi instance:
 
 ![alt text](https://github.com/willie-engelbrecht/IngestNiFiToPhoenix/blob/master/ClickTemplateButton.JPG "Load the sample flow")
 
+And then load a copy to your canvas:
+
+![alt text](https://github.com/willie-engelbrecht/IngestNiFiToPhoenix/blob/master/LoadTemplateToCanvas.JPG "Load template to the canvas")
+
 Once Imported, update the three Kafka processors, and set the correct Hostname/IP of your Kafka broker:
 
 ![alt text](https://github.com/willie-engelbrecht/IngestNiFiToPhoenix/blob/master/KafkaBrokerIP.JPG "Update Kafka Broker Hostname/IP")
