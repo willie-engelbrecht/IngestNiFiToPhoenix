@@ -65,9 +65,15 @@ Click on the Template button to load the example to your NiFi instance:
 
 Once Imported, update the three Kafka processors, and set the correct Hostname/IP of your Kafka broker:
 
+![alt text](https://github.com/willie-engelbrecht/IngestNiFiToPhoenix/blob/master/KafkaBrokerIP.JPG "Update Kafka Broker Hostname/IP")
+
 Double click on PutSQL, and update the Hostname/IP of your Phoenix server in the DBCPConnectionPool:
 
+![alt text](https://github.com/willie-engelbrecht/IngestNiFiToPhoenix/blob/master/DBCPConnectionPool.JPG "Update DBCPConnection pool")
+
 Also update the Hostname/IP of your HiveMetastore URI in the PutHive3Streaming processor:
+
+![alt text](https://github.com/willie-engelbrecht/IngestNiFiToPhoenix/blob/master/HiveMetaStore.JPG "Update Hive Metastore URI Hostname/IP")
 
 You can now start all your flows, and see data being pushed to Phoenix and Hive simultaniously. 
 While it's running, you can go back to the commandline and test the row count:
