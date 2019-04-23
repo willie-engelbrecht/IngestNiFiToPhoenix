@@ -75,7 +75,16 @@ Also update the Hostname/IP of your HiveMetastore URI in the PutHive3Streaming p
 
 ![alt text](https://github.com/willie-engelbrecht/IngestNiFiToPhoenix/blob/master/HiveMetaStore.JPG "Update Hive Metastore URI Hostname/IP")
 
-You can now start all your flows, and see data being pushed to Phoenix and Hive simultaniously. 
+You can now start your flows in the green box, and see the data being push to the Kafka topic:
+
+![alt text](https://github.com/willie-engelbrecht/IngestNiFiToPhoenix/blob/master/GenerateData.JPG "Start your data generation to Kafka")
+
+Start the ingest from Kafka to Phoenix, and Kafka to Hive3Streaming:
+
+![alt text](https://github.com/willie-engelbrecht/IngestNiFiToPhoenix/blob/master/PushToPhoenix.JPG "Push to Phoenix")
+
+![alt text](https://github.com/willie-engelbrecht/IngestNiFiToPhoenix/blob/master/PushToHive3.JPG "Push to Hive3")
+
 While it's running, you can go back to the commandline and test the row count:
 ```
 sqlline version 1.2.0
@@ -90,4 +99,27 @@ sqlline version 1.2.0
 
 Using ODBC, you can use a tool like Excel to load the data for further analyses:
 
+![alt text](https://github.com/willie-engelbrecht/IngestNiFiToPhoenix/blob/master/ImportFromODBC.JPG "Excel - Import from ODBC")
+
+Pick wich DSN to use: 
+
+![alt text](https://github.com/willie-engelbrecht/IngestNiFiToPhoenix/blob/master/PickYourDSN.JPG "Excel - Pick your DSN")
+
+Pick your table in the Phoenix ODBC connection:
+
+![alt text](https://github.com/willie-engelbrecht/IngestNiFiToPhoenix/blob/master/PickYourTable.JPG "Excel - Pick your Phoenix table")
+
+Now you have imported your data:
+
+![alt text](https://github.com/willie-engelbrecht/IngestNiFiToPhoenix/blob/master/IngestedData.JPG "Excel - View imported data")
+
 You can do the same from Zeppelin, by querying %jdbc(Phoenix), pulling and visualising the data:
+
+Example 1:
+
+![alt text](https://github.com/willie-engelbrecht/IngestNiFiToPhoenix/blob/master/Zeppelin-1.JPG "Zeppelin - Example 1")
+
+Example 2:
+
+![alt text](https://github.com/willie-engelbrecht/IngestNiFiToPhoenix/blob/master/Zeppelin-2.JPG "Zeppelin - Example 2")
+
