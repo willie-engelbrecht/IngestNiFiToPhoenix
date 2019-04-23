@@ -5,7 +5,7 @@ Apache Phoenix enables OLTP and operational analytics in Hadoop for low latency 
 * the flexibility of late-bound, schema-on-read capabilities from the NoSQL world by leveraging HBase as its backing store
 Apache Phoenix is fully integrated with other Hadoop products such as Spark, Hive, Pig, Flume, and Map Reduce.
 
-![alt text](https://phoenix.apache.org/ "Read more about the Apache Phoenix project")
+[Read more about the Apache Phoenix project](https://phoenix.apache.org/)
 
 The demo below will outline how you can integrate HDF (NiFi) with Phoenix to source data and push to Phoenix for BI Analysis with an ODBC tool (Excel). Any tool that is capable of using an ODBC connection will be able to source this data from Phoenix. 
 
