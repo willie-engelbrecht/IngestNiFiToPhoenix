@@ -102,6 +102,10 @@ sqlline version 1.2.0
 1 row selected (0.086 seconds)
 ```
 
+Another example of the data from Phoenix:
+
+![alt text](https://github.com/willie-engelbrecht/IngestNiFiToPhoenix/blob/master/PhoenixSelectQuery.JPG "Phoenix - Select Query")
+
 Using ODBC, you can use a tool like Excel to load the data for further analyses:
 
 ![alt text](https://github.com/willie-engelbrecht/IngestNiFiToPhoenix/blob/master/ImportFromODBC.JPG "Excel - Import from ODBC")
